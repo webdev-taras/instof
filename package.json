@@ -1,0 +1,55 @@
+{
+  "name": "instof",
+  "version": "0.0.1",
+  "description": "Tests to see if the prototype property of a constructor appears anywhere in the prototype chain of an value.",
+  "main": "index.js",
+  "keywords": [
+    "instanceof",
+    "instof",
+    "inst-of",
+    "instance-of",
+    "is-instance",
+    "is-instance-of",
+    "instances",
+    "classof",
+    "class-of",
+    "kind",
+    "is-kind",
+    "is-kind-of",
+    "constructor",
+    "memberof",
+    "member-of"
+  ],
+  "author": {
+    "name": "Taras Panasiuk",
+    "email": "webdev.taras@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:webdev-taras/instof.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "ava",
+    "test:cover": "nyc ava",
+    "test:watch": "ava --watch"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "nyc": "^15.1.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.test.js"
+    ]
+  },
+  "nyc": {
+    "include": "src",
+    "exclude": [
+      "**/*.test.js"
+    ]
+  },
+  "dependencies": {
+    "instype": "^0.0.1"
+  }
+}
